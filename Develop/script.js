@@ -1,8 +1,9 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+
 $(function () {
-  const hour = dayjs().format('HH');
+ 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -10,7 +11,38 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   // 
-  //
+  let hour = dayjs().format('H');
+
+  const dayjs = require('dayjs');
+
+  const formattedDate = dayjs().format('dddd MMMM Do');
+
+  console.log(formattedDate);
+  
+  function hourColor() {
+    $('.time-block').each(function() {
+      let eachHour = this.id;
+      
+
+      if(eachHour == hour) {
+        $(this).removeClass('past future').addClass('present');
+      } else if (eachHour > hour) {
+        $(this).removeClass('past present').addClass('future');
+      } else if (eachHour < hour) {
+        $(this).removeClass('present future').addClass('past');
+      }
+    })
+  }
+
+
+  $(document).ready(function() {
+    hourColor();
+  })
+   setInterval(hourColor, 1000);
+   // Import Day.js or include it in your HTML as previously shown
+ 
+
+
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -24,4 +56,11 @@ $(function () {
   //
   //
   // TODO: Add code to display the current date in the header of the page.
+
+
+
 });
+
+
+
+
