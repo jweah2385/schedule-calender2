@@ -13,7 +13,7 @@ $(function () {
   // 
   let hour = dayjs().format('H');
 
-  const dayjs = require('dayjs');
+  
 
   const formattedDate = dayjs().format('dddd MMMM Do');
 
