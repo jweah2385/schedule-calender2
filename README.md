@@ -35,7 +35,7 @@ This project is licensed under the MIT License.
 ## Preview
 
 This is what the user will see when they first see the page
-![This is a image preview of the applicaiton](<img width="500" alt="Screenshot 2023-11-13 at 2 50 31 PM" src="https://github.com/jweah2385/schedule-calender2/assets/134350647/61c66613-b9b9-4f4a-86ab-f4176a89b2a3">)
+![This is a image preview of the applicaiton](/image/Screenshot%202023-11-13%20at%202.50.31%20PM.png)
 
 
 ## Technologies Used
