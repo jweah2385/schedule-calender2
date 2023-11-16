@@ -35,6 +35,7 @@ This project is licensed under the MIT License.
 ## Preview
 
 This is what the user will see when they first see the page
+
 ![This is a image preview of the applicaiton](/image/Screenshot%202023-11-13%20at%202.50.31%20PM.png)
 
 
